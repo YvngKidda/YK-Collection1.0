@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "YK Collection",
   description: "Luxury fashion store",

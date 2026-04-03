@@ -1,4 +1,4 @@
-
+import { saveProduct } from "../../lib/saveProduct";
 "use client";
 
 import { useState } from "react";
@@ -32,7 +32,7 @@ export default function AdminPage() {
       createdAt: Date.now(),
     };
 
-    console.log(product); // next step we save to database
+    await saveProduct(product);
 
     alert("Product created (check console)");
     setUploading(false);
